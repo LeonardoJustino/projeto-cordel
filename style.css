@@ -17,6 +17,7 @@ header{
     background-color: black;
     color: white;
     text-align: center;
+    
 }
 header h1{
     font-size:60px;
@@ -27,6 +28,7 @@ header h1{
 }
 p{
     font-family: var(--fonte1);
+    animation: slide 0.3s;
 }
 header a:hover{
     text-decoration: underline;
@@ -105,4 +107,14 @@ footer strong{
         background-image: none;
     }
     
+}
+@keyframes slide {
+from{
+    opacity: 0;
+    transform: translateY(10px);
+
+}
+to {
+    opacity: 100%;
+}
 }
